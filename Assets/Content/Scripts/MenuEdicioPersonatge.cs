@@ -1,13 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using UnityEngine.SceneManagement;
 
 
 public class MenuEdicioPersonatge : MonoBehaviour
 {
-    public GameObject personatge;
     [Header("Sprites Cyle To Change")]
     public List<Sprite> cabell = new List<Sprite>();
     public List<Sprite> cabellColor = new List<Sprite>();
@@ -74,10 +71,5 @@ public class MenuEdicioPersonatge : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = cabellColor[opcioCabellColor1];
         }
     }
-    public void acabar()
-    {
-        print("hola");
-        //efabUtility.SaveAsPrefabAsset(personatge, "Assets/Content/Sprites/PersonatgePrincipal/Personatge.prefab");
-        SceneManager.LoadScene(1);
-    }
+    
 }
