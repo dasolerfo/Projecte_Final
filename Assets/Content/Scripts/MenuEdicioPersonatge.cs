@@ -6,6 +6,7 @@ using UnityEngine;
 public class MenuEdicioPersonatge : MonoBehaviour
 {
     [Header("Sprites Cyle To Change")]
+    [SerializeField]
     public List<Sprite> cabell = new List<Sprite>();
     public List<Sprite> cabellColor = new List<Sprite>();
     private int opcioCabell = 0;
